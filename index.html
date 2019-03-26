@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Quiz App</title>
+    <meta name="description" content="Basic Quiz App">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Laila" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="dataStore.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header role="banner">
+      <div class="col-1">
+        <a href="index.html">
+          <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/RP1357_p19_L3_lunar_lander.svg/586px-RP1357_p19_L3_lunar_lander.svg.png" alt="quiz icon"/>
+        </a>
+        <!--<button class="restart" onclick="restart()">Restart</button>-->
+      </div>
+    </header>
+    <main role="main">
+      <div class="quizStart">
+        <h1>Can you handle the pressure?</h1>
+        <button type="button" class="startButton">Start</button>
+      </div>
+      <div class="questionAnswerForm"></div>
+    </main>
+  </body>
+  <footer class="scoreTracker">
+    <div class="scoreContainer">
+      <div class="q js-q0"></div>
+      <div class="q js-q1"></div>
+      <div class="q js-q2"></div>
+      <div class="q js-q3"></div>
+      <div class="q js-q4"></div>
+      <div class="q js-q5"></div>
+      <div class="q js-q6"></div>
+      <div class="q js-q7"></div>
+      <div class="q js-q8"></div>
+      <div class="q js-q9"></div>
+      <!-- I want these  to shrink for mobile use and grow to a certain size then stop for certain screens-->
+    </div>
+  </footer>
+</html>
