@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  display: block;
+}
+body {
+    font-family: 'Laila', sans-serif;
+    background-color: #ffffff;
+    background: url('https://i.imgur.com/W0nQtSK.jpg');
+    background-position: top center;
+    background-size: 350%;
+    background-repeat: no-repeat;
+    color: black;
+}
+header {
+    width: 100%;
+    padding: 30px 0;
+    font-size: 20px;
+}
+h1 {
+  -webkit-text-stroke-width: .15px;
+  -webkit-text-stroke-color: white;
+}
+.col-1 {
+    text-align: center;
+}
+.logo {
+    height: 150px;
+    width: 150px;
+    background-color: white;
+}
+footer {
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.quizStart {
+    display: block;
+    text-align: center;
+    width: 50%;
+    margin-top: 150px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+button {
+    padding: 20px;
+    border: none;
+    background-color: rgb(79, 64, 144);
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 40px
+}
+button:hover, button:focus {
+    background-color: #5c0079b4;
+    color: #ffe44b
+}
+main div {
+  margin: 0 auto;
+}
+.scoreContainer {
+  margin: 0 auto;
+  width: 600px;
+  max-width: 80%;
+  height: 20px;
+  text-align: center;
+}
+.q{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 0 12.5px 0 12.5px;
+    background-color: white;
+    border-radius: 20px;
+    transition: all 200ms;
+}
+.active {
+  width: 60px;
+}
+label:nth-child(1) {
+    background-color: rgb(157, 56, 175)
+}
+label:nth-child(2) {
+    background-color: rgb(117, 56, 175)
+}
+label:nth-child(3) {
+    background-color: rgb(77, 56, 175)
+}
+label:nth-child(4) {
+    background-color: rgb(37, 56, 175)
+}
+label {
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    line-height: 22px
+}
+label:hover, label:focus {
+    background-color: rgba(0, 0, 0, 0.609)
+}
+fieldset {
+    border: none;
+}
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ffffff;
+    transition: 0.2s all linear;
+    outline: none;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+input:checked {
+    border: 8px solid #ebca52;
+}
+input[type=radio] {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+h2 {
+    text-align: left;
+    margin-bottom: 40px;
+    color: #ffffff;
+    text-transform: uppercase
+}
+form button {
+    padding: 20px;
+    border: none;
+    background-color: #ebca52;
+    color: #363946;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+}
+form button:hover, form button:focus {
+    background-color: #363946;
+    color: #ebca52
+}
+.answer {
+    flex: 1 1 auto;
+}
+.questionAnswerForm {
+    display: none;
+    width: 50%;
+}
+.correctFeedback {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(245, 255, 255, 1) 0%, rgba(172, 44, 195, 0.897) 100%);
+    padding-top: 40px
+}
+.correctFeedback button {
+    width: 100%
+}
+.correctFeedback p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    margin-left: 20px;
+    margin-right: 20px
+}
+.correctFeedback span {
+    color: rgb(0, 0, 0);
+}
+h3 {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.results p:first-of-type {
+    font-size: 25px;
+    margin-bottom: 10px
+}
+.results p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 0
+}
+.restartButton {
+    margin-top: 40px
+}
+restart {
+  margin: 
+}
+@media screen and (max-width: 1190px) {
+    .questionAnswerForm,
+    .quizStart {
+        width: 80%;
+        margin-bottom: 100px
+    }
+}
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 120px;
+        height: 120px;
+        display: block;
+        margin: auto;
+    }
+    header ul {
+        margin: 10px;
+        text-align: center
+    }
+    h1 {
+        font-size: 1.5em
+    }
+    header ul li {
+        padding: 10px;
+        font-size: 18px
+    }
+    .col-4,
+    .col-8 {
+        width: 100%
+    }
+    .quizStart {
+        width: 100%;
+        padding: 40px;
+        margin-top: 0
+    }
+    h2 {
+        font-size: 18px
+    }
+    .questionAnswerForm {
+        width: 100%;
+        padding: 20px;
+        margin-top: 0
+    }
+    label {
+        font-size: 16px;
+        padding: 15px
+    }
+    .correctFeedback img {
+        width: 100px;
+        height: auto
+    }
+    .correctFeedback p {
+        font-size: 16px;
+        margin: 0 15px
+    }
+    .results p:first-of-type {
+        font-size: 18px
+    }
+    h3 {
+        font-size: 25px
+    }
+}
+.correct {
+  background-color: green
+}
+.incorrect {
+  background-color: red
+}
+@media only screen and (max-width: 600px) {
+  .q {
+    width: 10px;
+    height: 10px;
+  }
+  .active {
+    width: 30px;
+  }
+}
+//does this change
